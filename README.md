@@ -2,13 +2,13 @@
 
 ## Índice
 1. [Introdução](#introdução)
-  * Código limpo
-  * Linguagem Java
+    1. [Código limpo](#código-limpo)
+    2. [Linguagem Java](#linguagem-java)
 2. [Nomes significativos](#nomes-significativos)
-3. [Funções](#funcoes)
+3. [Funções](#funções)
 4. [Comentários](#comentários)
-  * Bons comentários
-  * Maus comentários
+    1. [Bons comentários](#bons-comentários)
+    2. [Maus comentários](#maus-comentários)
 5. [Formatação](#formatação)
 6. [Objetos](#objetos)
 7. [Tratamento de erros](#tratamento-de-erros)
