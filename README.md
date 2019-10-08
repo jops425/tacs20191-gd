@@ -50,3 +50,4 @@ Tendo em vista os aspectos anteriormente citados, este guia fornece ao desenvolv
 
 ## Referências
 
+MARTIN, Robert C. Código Limpo: Habilidades Práticas do Agile Software. 1ª edição. Rio de Janeiro: Editora Alta Books, 2011.
