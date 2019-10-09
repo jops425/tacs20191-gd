@@ -8,6 +8,9 @@
     3. [Use nomes pronunciáveis](#use-nomes-pronunciáveis)
     4. [Classes e métodos](#classes-e-métodos)
 3. [Funções](#funções)
+    1. [Tamanho](#tamanho)
+    2. [Coesão](#coesão)
+    3. [Parâmetros](#parâmetros)
 4. [Comentários](#comentários)
     1. [Bons comentários](#bons-comentários)
     2. [Maus comentários](#maus-comentários)
@@ -87,6 +90,23 @@ if (oscar.isEmpty()) ...
 ```
 
 ## Funções
+
+Serão comentados, a seguir, os principais pontos aos se considerar funções no código.
+
+### Tamanho
+
+A primeira regra sobre funções é que elas devem ser pequenas. Como exemplo, segue uma função que calcula, dentre dois números, o maior destes.
+
+```Java
+public static int maiorNumero(int valorInicial, int valorFinal) {
+    if (valorInicial > valorFinal)
+        return valorInicial;
+    return valorFinal;
+}
+```
+
+### Coesão
+### Parâmetros
 
 ## Comentários
 ### Bons comentários
