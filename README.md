@@ -80,6 +80,7 @@ class EmmyAwards {
 ### Classes e métodos
 
 Classes e objetos devem ser denominadas com substantivos, propriamente ditos, por exemplo, Estudante, SalaDeAula, AcademyAwards. Palavras genéricas como Gerente, Processador, Dados devem ser evitadas, além de não poderem ser utilizados verbos para nomeá-las.
+
 Em relação aos nomes dos métodos, estes devem conter verbos, como atualizarEstudante, removerSalaDeAula, adicionarDiscente. É preciso nomear métodos de acesso, alteração e autenticação de acordo com seus valores, adicionando prefixos *get*, *set* ou *is*, segundo o padrão *javabean*.
 
 ```Java
