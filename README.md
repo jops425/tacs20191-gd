@@ -7,9 +7,7 @@
     2. [Faça distinções significativas](#faça-distinções-significativas)
     3. [Use nomes pronunciáveis](#use-nomes-pronunciáveis)
     4. [Classes e métodos](#classes-e-métodos)
-    5. [Selecione uma palavra por conceito](#selecione-uma-palavra-por-conceito)
-    6. [Domínio da solução e do problema](#domínio-da-solução-e-do-problema)
-    7. [Contexto significativo](#contexto-significativo)
+    5. [Contexto significativo](#contexto-significativo)
 3. [Funções](#funções)
 4. [Comentários](#comentários)
     1. [Bons comentários](#bons-comentários)
@@ -88,10 +86,6 @@ String nome = estudante.getNome();
 turma.setTurma("Técnicas Avançadas de Programação");
 if (oscar.isEmpty()) ...
 ```
-
-### Selecione uma palavra por conceito
-### Domínio da solução e do problema
-### Contexto significativo
 
 ## Funções
 
