@@ -6,12 +6,10 @@
     1. [Utilize nomes que revelem seu propósito](#utilize-nomes-que-revelem-seu-propósito)
     2. [Faça distinções significativas](#faça-distinções-significativas)
     3. [Use nomes pronunciáveis](#use-nomes-pronunciáveis)
-    4. [Use nomes passíveis de busca](#use-nomes-passíveis-de-busca)
-    5. [Nomes de classes](#nomes-de-classes)
-    6. [Nomes de métodos](#nomes-de-métodos)
-    7. [Selecione uma palavra por conceito](#selecione-uma-palavra-por-conceito)
-    8. [Domínio da solução e do problema](#domínio-da-solução-e-do-problema)
-    9. [Contexto significativo](#contexto-significativo)
+    4. [Classes e métodos](#classes-e-métodos)
+    5. [Selecione uma palavra por conceito](#selecione-uma-palavra-por-conceito)
+    6. [Domínio da solução e do problema](#domínio-da-solução-e-do-problema)
+    7. [Contexto significativo](#contexto-significativo)
 3. [Funções](#funções)
 4. [Comentários](#comentários)
     1. [Bons comentários](#bons-comentários)
@@ -62,9 +60,34 @@ public static void copiarNumeros(int a1[], int a2[]) {
 Tal método pode ser lido mais facilmente caso o nome de seus parâmetros sejam "vetorOrigem" e "vetorDestino", por exemplo.
 
 ### Use nomes pronunciáveis
-### Use nomes passíveis de busca
-### Nomes de classes
-### Nomes de métodos
+```Java
+class CerimEm2019 {
+       private Date datInYmdhsm;
+       private Date datFYmdhsm;
+       private int anoCerim = 2019;
+}
+```
+Em um diálogo entre desenvolvedores, soa um tanto incoerente pronunciar os nomes das classes e atributos do exemplo, já que estes são uma junção de abreviações e siglas. Para proporcionar um diálogo inteligível, é preferível utilizar termos existentes do idioma:
+
+```Java
+class EmmyAwards {
+       private Date dataInicalTimestamp;
+       private Date dataFinalTimestamp;
+       private int anoCerimonia = 2019;
+}
+```
+
+### Classes e métodos
+
+Classes e objetos devem ser denominadas com substantivos, propriamente ditos, por exemplo, Estudante, SalaDeAula, AcademyAwards. Palavras genéricas como Gerente, Processador, Dados devem ser evitadas, além de não poderem ser utilizados verbos para nomeá-las.
+Em relação aos nomes dos métodos, estes devem conter verbos, como atualizarEstudante, removerSalaDeAula, adicionarDiscente. É preciso nomear métodos de acesso, alteração e autenticação de acordo com seus valores, adicionando prefixos *get*, *set* ou *is*, segundo o padrão *javabean*.
+
+```Java
+String nome = estudante.getNome();
+turma.setTurma("Técnicas Avançadas de Programação");
+if (oscar.isEmpty()) ...
+```
+
 ### Selecione uma palavra por conceito
 ### Domínio da solução e do problema
 ### Contexto significativo
@@ -90,3 +113,6 @@ Tal método pode ser lido mais facilmente caso o nome de seus parâmetros sejam 
 ## Referências
 
 MARTIN, Robert C. Código Limpo: Habilidades Práticas do Agile Software. 1ª edição. Rio de Janeiro: Editora Alta Books, 2011.
+
+
+
