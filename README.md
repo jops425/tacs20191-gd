@@ -9,7 +9,7 @@
     4. [Classes e métodos](#classes-e-métodos)
 3. [Funções](#funções)
     1. [Tamanho](#tamanho)
-    2. [Coesão](#coesão)
+    2. [Objetivo](#objetivo)
     3. [Parâmetros](#parâmetros)
 4. [Comentários](#comentários)
     1. [Bons comentários](#bons-comentários)
@@ -98,14 +98,51 @@ Serão comentados, a seguir, os principais pontos aos se considerar funções no
 A primeira regra sobre funções é que elas devem ser pequenas. Como exemplo, segue uma função que calcula, dentre dois números, o maior destes.
 
 ```Java
-public static int maiorNumero(int valorInicial, int valorFinal) {
+public static int obtemMaiorNumero(int valorInicial, int valorFinal) {
     if (valorInicial > valorFinal)
         return valorInicial;
     return valorFinal;
 }
 ```
 
-### Coesão
+### Objetivo
+
+As funções devem possuir um único objetivo, ou seja, elas devem realizar apenas uma tarefa. O exemplo a seguir mostra uma função que realiza diversas tarefas.
+
+```Java
+public static int verificaNumero(int valorInicial, int valorFinal, int[] vetor) {
+    int maiorValor, quantidadeDeOcorrencias = 0;
+    if (valorInicial > valorFinal) {
+        maiorValor = valorInicial;
+    } else {
+        maiorValor = valorFinal;
+    }
+    for (int i = 0; i < vetor.length; i++) {
+        if (vetor[i] == maiorValor) {
+            quantidadeDeOcorrencias++;
+        }
+    }
+    return quantidadeDeOcorrencias;
+}
+```
+A partir disso, observe que o método mostrado pode ser dividido em dois outros:
+
+```Java
+public static int obtemMaiorNumero(int valorInicial, int valorFinal) {
+    if (valorInicial > valorFinal)
+        return valorInicial;
+    return valorFinal;
+}
+
+public static int verificaOcorrenciaPorVetor(int numero, int[] vetor) {
+    int quantidadeDeOcorrencias = 0;
+    for (int i = 0; i < vetor.length; i++)
+        if (vetor[i] == numero)
+            quantidadeDeOcorrencias++;
+    return quantidadeDeOcorrencias;
+}
+```
+
 ### Parâmetros
 
 ## Comentários
