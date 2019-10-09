@@ -150,7 +150,12 @@ A quantidade ideal de parâmetros em uma função é zero, e a máxima são dois
 ```Java
 public static void verificaNumero(Scanner scanner, int valorExistente) {
     System.out.println("Entre com um valor: ");
-    int valorInformado = scanner.nextInt();
+    int valorLido = scanner.nextInt();
+    if (valorLido > valorExistente) {
+        System.out.println("Valor lido é maior que o existente");
+    } else {
+        System.out.println("Valor lido é menor que o existente");
+    }
 }
 ```
 
