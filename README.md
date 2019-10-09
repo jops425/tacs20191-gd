@@ -145,6 +145,19 @@ public static int verificaOcorrenciaPorVetor(int numero, int[] vetor) {
 
 ### Parâmetros
 
+A quantidade ideal de parâmetros em uma função é zero, e a máxima são dois. Deve-se evitar, sempre que possível, o uso de três ou mais parâmetros. Isso porque eles podem requerer determinados conceitos.
+
+```Java
+public static void verificaNumero(Scanner scanner, int valorExistente) {
+    System.out.println("Entre com um valor: ");
+    int valorInformado = scanner.nextInt();
+}
+```
+
+No exemplo, como o parâmetro *scanner* não foi declarado e instanciado dentro do próprio método, os leitores do método podem ter que interpretá-lo toda vez que acessarem a função.
+
+Por outro lado, uma grande quantidade de parâmetros pode tornar mais complexa a atividade de testes. Pode haver maior dificuldade ao se escrever todos os casos de teste para se certificar de que as diversas combinações de parâmetros funcionem adequadamente. 
+
 ## Comentários
 ### Bons comentários
 ### Maus comentários
