@@ -7,7 +7,6 @@
     2. [Faça distinções significativas](#faça-distinções-significativas)
     3. [Use nomes pronunciáveis](#use-nomes-pronunciáveis)
     4. [Classes e métodos](#classes-e-métodos)
-    5. [Contexto significativo](#contexto-significativo)
 3. [Funções](#funções)
 4. [Comentários](#comentários)
     1. [Bons comentários](#bons-comentários)
