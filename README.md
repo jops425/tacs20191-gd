@@ -16,9 +16,8 @@
     2. [Maus comentários](#maus-comentários)
 5. [Formatação](#formatação)
 6. [Objetos](#objetos)
-7. [Tratamento de erros](#tratamento-de-erros)
-8. [Classes](#classes)
-9. [Referências](#referências)
+7. [Classes](#classes)
+8. [Referências](#referências)
 
 ---
 
@@ -218,9 +217,19 @@ public class AcademyAwards() {
 
 ## Formatação
 
-## Objetos
+A formatação de um código é bastante importante. Ela serve como uma comunicação, devendo ser até mesmo a primeira regra em detrimento a "fazer o código funcionar". Isso deve ser considerado, pois a funcionalidade criada tem grandes chances de ser alterada posteriormente, mas a legibilidade, através da formatação, persistirá, tendo efeito em todas as mudanças posteriores.
 
-## Tratamento de erros
+### Espaçamento vertical entre conceitos
+
+### Ordenação vertical
+
+Em geral, é desejável que as chamadas das dependências da função apontem para baixo. Ou seja, métodos chamados devem localizar-se abaixo daquele que os chamou. Isso cria um fluxo natural para baixo no módulo do código-fonte, de um nível maior para o menor. 
+
+### Formatação horizontal
+
+É recomendado haver um esforço para se manter as linhas de código não muito extensas. Em algumas ocasiões, as próprias IDEs possuem mecanismos delimitadores, mostrando quando determinado limite de caracteres foi atingido e/ou ultrapassado.
+
+## Objetos
 
 ## Classes
 
