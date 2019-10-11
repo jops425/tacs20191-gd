@@ -18,9 +18,8 @@
     1. [Espaçamento vertical entre conceitos](#espaçamento-vertical-entre-conceitos)
     2. [Ordenação vertical](#ordenação-vertical)
     3. [Formatação horizontal](#formatação-horizontal)
-6. [Objetos](#objetos)
-7. [Classes](#classes)
-8. [Referências](#referências)
+6. [Classes](#classes)
+7. [Referências](#referências)
 
 ---
 
@@ -274,10 +273,6 @@ Em geral, é desejável que as chamadas das dependências da função apontem pa
 ### Formatação horizontal
 
 É recomendado haver um esforço para se manter as linhas de código não muito extensas, mantendo o limite de 120 caracteres. Em algumas ocasiões, as próprias IDEs possuem mecanismos delimitadores, mostrando quando determinado limite foi atingido e/ou ultrapassado.
-
-## Objetos
-
-## Classes
 
 ## Referências
 
