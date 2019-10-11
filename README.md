@@ -15,6 +15,9 @@
     1. [Bons comentários](#bons-comentários)
     2. [Maus comentários](#maus-comentários)
 5. [Formatação](#formatação)
+    1. [Espaçamento vertical entre conceitos](#espaçamento-vertical-entre-conceitos)
+    2. [Ordenação vertical](#ordenação-vertical)
+    3. [Formatação horizontal](#formatação-horizontal)
 6. [Objetos](#objetos)
 7. [Classes](#classes)
 8. [Referências](#referências)
@@ -221,13 +224,56 @@ A formatação de um código é bastante importante. Ela serve como uma comunica
 
 ### Espaçamento vertical entre conceitos
 
+Para que haja uma boa legibilidade no código, é necessário haver espaçamento entre declarações de pacote, importações e métodos, como no exemplo a seguir:
+
+```Java
+package br.ufg.inf.es.awards;
+
+import br.ufg.inf.es.person.Actor;
+import java.util.List;
+
+public class AcademyAwards {
+
+    private int year;
+    
+    private String localCeremony;
+    
+    public int getYear() {
+        return this.year;
+    }
+    
+    public void setYear(int year) {
+        this.year = year;
+    } 
+
+}
+```
+
+Retirando-se os espaçamentos, durante uma leitura, os olhos só parariam após o término do código, o que prejudicaria bastante a legibilidade.
+
+```Java
+package br.ufg.inf.es.awards;
+import br.ufg.inf.es.person.Actor;
+import java.util.List;
+public class AcademyAwards {
+    private int year;
+    private String localCeremony;
+    public int getYear() {
+        return this.year;
+    }
+    public void setYear(int year) {
+        this.year = year;
+    } 
+}
+```
+
 ### Ordenação vertical
 
 Em geral, é desejável que as chamadas das dependências da função apontem para baixo. Ou seja, métodos chamados devem localizar-se abaixo daquele que os chamou. Isso cria um fluxo natural para baixo no módulo do código-fonte, de um nível maior para o menor. 
 
 ### Formatação horizontal
 
-É recomendado haver um esforço para se manter as linhas de código não muito extensas. Em algumas ocasiões, as próprias IDEs possuem mecanismos delimitadores, mostrando quando determinado limite de caracteres foi atingido e/ou ultrapassado.
+É recomendado haver um esforço para se manter as linhas de código não muito extensas, mantendo o limite de 120 caracteres. Em algumas ocasiões, as próprias IDEs possuem mecanismos delimitadores, mostrando quando determinado limite foi atingido e/ou ultrapassado.
 
 ## Objetos
 
