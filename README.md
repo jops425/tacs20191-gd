@@ -17,10 +17,8 @@
 5. [Formatação](#formatação)
 6. [Objetos](#objetos)
 7. [Tratamento de erros](#tratamento-de-erros)
-8. [Testes unitários](#testes-unitários)
-9. [Classes](#classes)
-10. [Odores e heurísticas](#odores-e-heurísticas)
-11. [Referências](#referências)
+8. [Classes](#classes)
+9. [Referências](#referências)
 
 ---
 
@@ -164,7 +162,33 @@ No exemplo, como o parâmetro *scanner* não foi declarado e instanciado dentro 
 Por outro lado, uma grande quantidade de parâmetros pode tornar mais complexa a atividade de testes. Pode haver maior dificuldade ao se escrever todos os casos de teste para se certificar de que as diversas combinações de parâmetros funcionem adequadamente. 
 
 ## Comentários
+
+A verdade é que, se as linguagens de programação fossem expressivas o suficiente ou se os desenvolvedores as manipulassem com eficácia para expressar suas reais intenções, não se precisaria de muitos comentários, provavelmente nenhum. 
+
 ### Bons comentários
+
+Note alguns exemplos de bons comentários:
+
+#### Comentário TODO
+
+```Java
+public static void gerarArquivoHtml() {
+    // TODO Finalizar função. 
+}
+```
+
+#### Javadocs em APIs públicas
+
+```Java
+/**
+ * Retorna o número correspondente a um dia da semana, de 0 a 6, a partir de uma data.
+ * 
+ * @param data Uma data no formato yyyy-mm-dd.
+ * @return O dia da semana correspondente à data, de 0 a 6, ou -1 em casos inválidos.
+ */
+public int calculaNumeroDiaDaSemana(int data) ...
+```
+
 ### Maus comentários
 
 ## Formatação
@@ -173,11 +197,7 @@ Por outro lado, uma grande quantidade de parâmetros pode tornar mais complexa a
 
 ## Tratamento de erros
 
-## Testes unitários
-
 ## Classes
-
-## Odores e heurísticas
 
 ## Referências
 
