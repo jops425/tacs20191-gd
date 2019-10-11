@@ -164,10 +164,9 @@ Por outro lado, uma grande quantidade de parâmetros pode tornar mais complexa a
 ## Comentários
 
 A verdade é que, se as linguagens de programação fossem expressivas o suficiente ou se os desenvolvedores as manipulassem com eficácia para expressar suas reais intenções, não se precisaria de muitos comentários, provavelmente nenhum. 
+A seguir, alguns exemplos de bons e maus comentários:
 
 ### Bons comentários
-
-Note alguns exemplos de bons comentários:
 
 #### Comentário TODO
 
@@ -190,6 +189,32 @@ public int calculaNumeroDiaDaSemana(int data) ...
 ```
 
 ### Maus comentários
+
+#### Comentários redundantes
+
+```Java
+// Método recebe um número, o qual é dividido por 2. Caso o resto for zero, a função
+// retorna true, caso contrário, retorna falso.
+public static boolean verificaNumeroPar(int numero) {
+    if (numero % 2 == 0)
+        return true;
+    return false;
+}
+```
+
+#### Comentários ruidosos
+
+```Java
+
+public class AcademyAwards() {
+    
+    // Construtor padrão
+    protected AcademyAWards() {
+    }
+    
+}
+
+```
 
 ## Formatação
 
